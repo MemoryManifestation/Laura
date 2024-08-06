@@ -1,0 +1,290 @@
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #f1bd10;
+}
+.css-selector {
+  background: linear-gradient(
+    219deg,
+    #ffa69e,
+    #faf3dd,
+    #b8f2e6,
+    #aed9e0,
+    #98c9a3,
+    #edeec9,
+    #ffa8a9,
+    #fbc2b5,
+    #d88373,
+    #93e1d8,
+    #ddfff7,
+    #aa4465
+  );
+  background-size: 2400% 2400%; /* Allows the gradient to animate smoothly */
+
+  -webkit-animation: gradient 24s ease infinite; /* For Safari */
+  -moz-animation: gradient 24s ease infinite; /* For older Firefox */
+  animation: gradient 24s ease infinite; /* Standard syntax */
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.container {
+  position: relative;
+}
+
+.cake {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cake img {
+  width: 1080px;
+  height: auto;
+}
+
+/* Gaya untuk surat */
+.envelope {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 5;
+  display: bl;
+}
+.envelope-img {
+  width: 250px;
+  height: auto;
+}
+.letter {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 48px;
+  z-index: 20;
+  background-image: url(paper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 306px;
+  height: 250px;
+}
+.letter p {
+  font-family: "Kalnia Glaze", serif;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-left: 40px;
+}
+#sender {
+  text-align: left;
+}
+.hidden {
+  display: none;
+}
+
+.fire {
+  position: absolute;
+  width: 65px;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 2;
+}
+
+#fire1 {
+  top: 99px;
+  left: 37.7%;
+}
+
+#fire2 {
+  top: 138px;
+  left: 41.3%;
+}
+
+#fire3 {
+  top: 34px;
+  left: 51.5%;
+  transform: translateX(-50%);
+}
+
+#fire4 {
+  top: 117px;
+  left: 51.9%;
+}
+
+#fire5 {
+  top: 99px;
+  left: 55.5%;
+}
+
+#fire6 {
+  top: 113px;
+  left: 47.3%;
+  transform: translateX(-50%);
+}
+
+#fire7 {
+  left: 30%;
+  width: 100px;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+#fire8 {
+  height: auto;
+  width: 100px;
+  left: 62%;
+}
+
+.fire.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Media Queries untuk Mobile */
+@media (max-width: 600px) {
+  .cake img {
+    width: 400px;
+    height: auto;
+  }
+  .fire {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    z-index: 2;
+  }
+
+  #fire1 {
+    top: 35px;
+    left: 37.7%;
+  }
+
+  #fire2 {
+    top: 49px;
+    left: 41.3%;
+  }
+
+  #fire3 {
+    top: 11px;
+    left: 51.5%;
+    transform: translateX(-50%);
+  }
+
+  #fire4 {
+    top: 42px;
+    left: 51.9%;
+  }
+
+  #fire5 {
+    top: 35px;
+    left: 55.5%;
+  }
+
+  #fire6 {
+    top: 40px;
+    left: 47.3%;
+    transform: translateX(-50%);
+  }
+
+  #fire7 {
+    left: 11%;
+    width: 100px;
+    height: auto;
+  }
+
+  #fire8 {
+    height: auto;
+    width: 100px;
+    left: 65%;
+  }
+  /* Gaya untuk surat */
+  .envelope {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 5;
+    display: bl;
+  }
+  .envelope-img {
+    width: 150px;
+    height: auto;
+  }
+  .letter {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 28px;
+    z-index: 20;
+    background-image: url(paper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 246px;
+    height: 250px;
+  }
+  .letter p {
+    font-family: "Kalnia Glaze", serif;
+    font-size: 9px;
+    margin-top: 45px;
+    margin-left: 34px;
+  }
+  #sender {
+    text-align: left;
+  }
+}

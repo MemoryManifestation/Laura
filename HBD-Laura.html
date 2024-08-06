@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Laura</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="21.webp" type="image/x-icon" />
+  </head>
+  <body class="css-selector">
+    <div class="container">
+      <div class="cake" onclick="handleClick()">
+        <img src="cake.png" alt="Birthday Cake" />
+      </div>
+      <img src="fire.gif" class="fire" id="fire1" alt="Fire" />
+      <img src="fire.gif" class="fire" id="fire2" alt="Fire" />
+      <img src="fire.gif" class="fire" id="fire3" alt="Fire" />
+      <img src="fire.gif" class="fire" id="fire4" alt="Fire" />
+      <img src="fire.gif" class="fire" id="fire5" alt="Fire" />
+      <img src="fire.gif" class="fire" id="fire6" alt="Fire" />
+      <img src="confetti.gif" class="fire" id="fire7" alt="Fire" />
+      <img src="confetti.gif" class="fire" id="fire8" alt="Fire" />
+    </div>
+
+    <div
+      class="envelope"
+      id="envelope"
+      onclick="toggleLetter()"
+      style="display: none"
+    >
+      <img
+        src="envelope.gif"
+        alt="Envelope"
+        class="envelope-img"
+        id="envelope-img"
+      />
+    </div>
+    <div class="letter" id="letter" style="display: none">
+      <!-- Tombol keluar -->
+      <p>
+        If i could give you one thing in life, i would give you the ability to
+        see yourself trough my eyes, only then will you realize how special you
+        are. <br />
+        <br />
+        Happy Birthday Lauraaa, I hope this day brings you as much joy as you
+        have brought into my life. May your heart be filled with happiness, your
+        dreams soar high, and your path be illuminated with love and light.
+      </p>
+      <p id="sender">
+        With all my Love, <br />
+        Mario
+      </p>
+    </div>
+    <!-- Audio Element -->
+    <audio id="birthday-audio">
+      <source src="happy-birthday.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
