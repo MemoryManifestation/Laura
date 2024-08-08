@@ -4,6 +4,11 @@ function toggleCandles() {
   const fires = document.querySelectorAll(".fire");
   const envelope = document.getElementById("envelope");
   const audio = document.getElementById("birthday-audio");
+  const confetti = document.querySelectorAll(".confetti")
+  
+  confetti.forEach((confetti) => {
+    confetti.classList.toggle("active2")
+  })
 
   fires.forEach((fire) => {
     fire.classList.toggle("active");

@@ -132,12 +132,20 @@ body {
   position: absolute;
   width: 65px;
   height: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 2;
+}
+.confetti {
+  position: absolute;
+  width: 65px;
+  height: auto;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0.5s;
   z-index: 2;
 }
-
 #fire1 {
   top: 99px;
   left: 37.7%;
@@ -170,20 +178,25 @@ body {
   transform: translateX(-50%);
 }
 
-#fire7 {
+#confetti1 {
   left: 30%;
   width: 100px;
   height: auto;
   transform: scaleX(-1);
 }
 
-#fire8 {
+#confetti2 {
   height: auto;
   width: 100px;
   left: 62%;
 }
 
 .fire.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.confetti.active2 {
   opacity: 1;
   visibility: visible;
 }
@@ -198,8 +211,8 @@ body {
     position: absolute;
     width: 25px;
     height: auto;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     transition: opacity 0.5s, visibility 0.5s;
     z-index: 2;
   }
@@ -236,13 +249,13 @@ body {
     transform: translateX(-50%);
   }
 
-  #fire7 {
+  #confetti1 {
     left: 11%;
     width: 100px;
     height: auto;
   }
 
-  #fire8 {
+  #confetti2 {
     height: auto;
     width: 100px;
     left: 65%;
