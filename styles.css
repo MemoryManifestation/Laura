@@ -11,6 +11,19 @@ body {
   background-size: cover;
   background-color: #f1bd10;
 }
+.hero {
+  position: absolute;
+  inset: 0px;
+  top: -100px;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: auto;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-family: "Kalnia Glaze", serif;
+  text-align: center;
+}
 .css-selector {
   background: linear-gradient(
     219deg,
@@ -203,6 +216,20 @@ body {
 
 /* Media Queries untuk Mobile */
 @media (max-width: 600px) {
+  .hero {
+    position: absolute;
+    inset: 0px;
+    top: -90px;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+  }
+  .hero h1 {
+    font-size: 1.3rem;
+    font-family: "Kalnia Glaze", serif;
+    text-align: center;
+  }
+
   .cake img {
     width: 400px;
     height: auto;
@@ -213,6 +240,15 @@ body {
     height: auto;
     opacity: 1;
     visibility: visible;
+    transition: opacity 0.5s, visibility 0.5s;
+    z-index: 2;
+  }
+  .confetti {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
     z-index: 2;
   }
@@ -298,6 +334,7 @@ body {
     margin-left: 34px;
   }
   #sender {
+    margin-top: -2px;
     text-align: left;
   }
 }
